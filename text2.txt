@@ -1,0 +1,26 @@
+ <nav class="container d-flex align-items-center justify-content-between py-3">
+            <h1 class="logo-header">B<span class="logo-dot">.</span>Th</h1>
+            <ul class="d-flex gap-5">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+            <button class="btn-download">Download</button>
+        </nav>
+
+         nav ul li a:after {
+     content: '';
+     width: 100%;
+     position: absolute;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: var(--orange-color);
+     transition: 500ms linear;
+     transform: scale(0);
+ }
+
+ nav ul li a:hover:after {
+     transform: scale(1);
+ }

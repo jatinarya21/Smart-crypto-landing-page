@@ -1,0 +1,32 @@
+:root{
+    /* color */
+    --primary-color:black;
+    --secondary-color:white;
+    --green-color:#236E57;
+    --orange-color:#F05830;
+    --grey-color:#807D7D;
+    --bg-color:#FFF8F1;
+    /* color */
+    
+    /* font-size */
+    --fs-12:12px;
+    --fs-18:18px;
+    --fs-20:20px;
+    --fs-24:24px;
+    --fs-32:32px;
+    --fs-40:40px;
+    --fs-42:42px;
+    --fs-56:56px;
+    --fs-48:48px;
+    --fs-62:62px;
+    /* font-size */
+
+    /* font-weight */
+    --fw-400:400;
+    --fw-500:500;
+    --fw-600:600;
+    --fw-700:700;
+    --fw-800:800;
+
+    /* font-weight */
+}
