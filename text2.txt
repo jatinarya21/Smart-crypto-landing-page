@@ -9,6 +9,10 @@
             <button class="btn-download">Download</button>
         </nav>
 
+        nav ul li a{
+            display: inline-block;
+            position:relative;
+        }
          nav ul li a:after {
      content: '';
      width: 100%;
