@@ -234,7 +234,6 @@ nav ul li a:hover {
 }
 
 .card-main {
-    width: 380px;
     border: none;
     padding: 56px;
 
@@ -676,18 +675,66 @@ ul {
         overflow: visible;
     }
 
-     .btn-download {
-         display: none;
-     }
- }
-
- @media (min-width:576px) {
-     .rectangle-sm-1 {
-         width: 65%;
-         top: 48%;
+    .btn-download {
+        display: none;
+    }
+}
+@media (min-width:320px) {
+    :root{
+        --fs-12:12px;
+        --fs-18:14px !important;
+        --fs-20:14px !important;
+        --fs-24:16px !important;
+        --fs-32:32px;
+        --fs-40:40px;
+        --fs-42:42px;
+        --fs-56:56px;
+        --fs-48:20px !important;
+        --fs-62:62px;
+    }
+    .input{
+        width: 290px !important;
+    }
+    .link-box {
+        margin-top: 6px !important;
+    }
+    .main-link-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ml-24 {
+        margin-right: unset !important;
+    }
+}
+@media (min-width:576px) {
+    .main-link-box{
+        display: flex;
+        flex-direction: unset !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .ml-24 {
+        margin-right: 24px !important;
+    }
+    :root{
+        --fs-12:12px;
+        --fs-18:16px !important;
+        --fs-20:16px !important;
+        --fs-24:18px !important;
+        --fs-32:32px;
+        --fs-40:40px;
+        --fs-42:42px;
+        --fs-56:56px;
+        --fs-48:30px !important;
+        --fs-62:62px;
+    }
+    .rectangle-sm-1 {
+        width: 65%;
+        top: 48%;
 
     }
-
     .hero-heading-sm {
         font-size: var(--fs-42);
         text-align: center;
@@ -716,12 +763,12 @@ ul {
         left: 78%;
     }
 
-     .line-2-sm {
-         width: 115px;
-         left: -1%;
-         top: -26px;
-     }
- }
+    .line-2-sm {
+        width: 115px;
+        left: -1%;
+        top: -26px;
+    }
+}
 
  @media (min-width:768px) {
      .btn-download-md {
@@ -752,15 +799,17 @@ ul {
         width: 170px;
         top: 12px;
         left: 62%;
+        display: block !important;
     }
 
-     .line-2-md {
-         width: 170px;
-         top: -25px;
-         left: 13%;
-     }
-     .grid-1{
-        grid-column:1/2 ;
+    .line-2-md {
+        width: 170px;
+        top: -25px;
+        left: 13%;
+    }
+
+    .grid-1 {
+        grid-column: 1/2;
         grid-row: 1/2;
     }
 
@@ -801,16 +850,16 @@ ul {
         font-size: var(--fs-32);
     }
 
-     .line-1-lg {
-         width: 265px;
-         top: 21px;
-         left: 67%;
-     }
+    .line-1-lg {
+        width: 265px;
+        top: 21px;
+        left: 67%;
+    }
 
     .line-2-lg {
         width: 265px;
-        top: -33px;
-        left: 4%;
+        top: -18px;
+        left: 68%;
     }
 
      .rectangle-lg-1 {
@@ -829,14 +878,16 @@ ul {
         font-size: var(--fs-18);
     }
 
-    .line-1-xl {
-        width: 375px;
-        left: 64%;
+    .line-1-lg {
+        width: 365px;
+        top: 21px;
+        left: 5%;
     }
 
-    .line-2-xl {
-        width: 375px;
-        left: 2%;
+    .line-2-lg {
+        width: 365px;
+        top: -18px;
+        left: 68%;
     }
 
     .hero-heading-xl {
@@ -871,9 +922,6 @@ ul {
         top: 35%;
         max-width: 100% !important;
     }
-    .line-2-xxl {
-        left: 8%;
-    }
 
     .hero-heading-xxl {
         font-size: var(--fs-48);
@@ -883,12 +931,25 @@ ul {
         font-size: var(--fs-20);
     }
 
-     .rectangle-xxl-1 {
-         top: 29%;
-     }
+    .rectangle-xxl-1 {
+        top: 29%;
+    }
 
-     .btn-download-xxl {
-         padding: 24px 36px;
-     }
+    .btn-download-xxl {
+        padding: 24px 36px;
+    }
 
- }
+}
+
+@media (min-width:1600px) {
+    .page8-img {
+        width: 100% !important;
+        margin-top: -40px !important;
+        transform: translateX(35%);
+    }
+    .page7-img1{
+        max-width: 100% !important;
+        margin-top: -100px !important;
+        transform: translateX(-50%) !important;
+    }
+}
