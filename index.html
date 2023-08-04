@@ -2,17 +2,46 @@
 <html lang="en">
 
 <head>
+    <!-- Primary Meta Tags -->
+    <title>B.Th - Smart crypto wallet</title>
+    <meta name="title" content="B.Th" />
+    <meta name="description" content="" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bth-smartcryptowallet.netlify.app/" />
+    <meta property="og:title" content="B.Th" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="https://thumbs2.imgbox.com/66/cb/h5Ps3J4g_t.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://bth-smartcryptowallet.netlify.app/" />
+    <meta property="twitter:title" content="B.Th" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B.Th</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="shortcut icon" href="./assets/images/page7-img1.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
+        <div id="preloder"
+            class=" loader bg-color min-vh-100 position-fixed top-0 start-0 d-flex justify-content-center align-items-center w-100">
+            <img width="10%" src="./assets/images/png/dollar-icon.png" alt="" />
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+        </script>
         <!-- Nav-bar Start-->
         <div class="navbar-area">
             <div class="container">
@@ -21,7 +50,7 @@
                     <a href="#home" class="site-logo">B<span>.</span>Th</a>
 
                     <!-- site menu/nav -->
-                    <ul id="Nav-Bar">
+                    <ul id="Nav-Bar" class="NAV_BAR">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Features</a></li>
                         <li><a href="#">How it works</a></li>
@@ -29,16 +58,16 @@
                     </ul>
                     <button class="btn-download btn-download-md btn-download-xl btn-download-xxl">Download</button>
                     <!-- nav-toggler for mobile version only -->
-                    <button onclick="openNav()" class="nav-toggler">
-                        <img src="./assets/images/png/nav bar.png" alt="">
+                    <button onclick="openNav()" class="nav-toggler d-md-none">
+                        <img class="rotate" src="./assets/images/png/nav bar.png" alt="">
                     </button>
                 </nav>
             </div>
         </div>
         <!-- Nav-bar End -->
         <!-- section-1 Start-->
-        <section class=" py-sm-0 py-md-3 py-xxl-5">
-            <img class="position-absolute end-0 rectangle-sm-1 rectangle-md-1 rectangle-lg-1 rectangle-xl-1 rectangle-xxl-1 rectangle-1"
+        <section class=" position-relative py-sm-0 py-md-3 py-xxl-5">
+            <img class=" position-absolute end-0 rectangle-1 rectangle-sm-1 rectangle-md-1 rectangle-lg-1 rectangle-xl-1 rectangle-xxl-1 rectangle-1"
                 src="./assets/images/png/Rectangle.png" alt="">
             <div class="container py-sm-0 py-md-1">
                 <div class="row">
@@ -49,20 +78,22 @@
                             class="hero-heading-sm hero-heading-md hero-heading-xl hero-heading-xxl hero-heading mb-xl-4">
                             Save Time and Start Digital
                             Wallet!</h2>
-                        <p class="hero-para hero-para-sm hero-para-md hero-para-lg hero-para-xl hero-para-xxl mb-5">A
+                        <p
+                            class="hero-para hero-para-sm hero-para-md hero-para-lg hero-para-xl hero-para-xxl mb-3 mb-sm-5">
+                            A
                             Lorem Ipsum is simply dummy text of the
                             printing and
                             typesetting
                             industry. Lorem Ipsum has
                             been the industry's </p>
-                        <div class="d-flex d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
+                        <div class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
                             <button class="btn-started btn-started-md btn-started-xl ">Get Started</button>
                             <div class="d-flex align-items-center ms-5">
                                 <img src="./assets/images/svg/play-cricle 2.svg" alt="play">
                                 <p class="txt-watch m-0 ms-2">Watch Video</p>
                             </div>
                         </div>
-                        <div class="d-flex mt-4 d-sm-none d-md-flex">
+                        <div class="d-none mt-4 d-sm-none d-md-flex">
                             <div>
                                 <p class="txt-digit">1.9k+</p>
                                 <p class="txt-active">Active Users</p>
@@ -76,7 +107,8 @@
                     <div class="col-12 col-lg-6 z-1 ">
                         <img class="hero-img" src="./assets/images/png/hero-img.png" alt="">
                     </div>
-                    <div class="flex-sm-column-reverse d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none">
+                    <div
+                        class="flex-sm-column-reverse d-flex gap-4 justify-content-center pt-4 d-sm-flex d-md-none d-lg-none d-xl-none d-xxl-none">
                         <button class="btn-started btn-started-md ">Get Started</button>
                         <div class="d-flex align-items-center justify-content-sm-center py-sm-4">
                             <img src="./assets/images/svg/play-cricle 2.svg" alt="play">
@@ -86,11 +118,11 @@
                     <!-- Small screen Watch Video Start -->
                     <div class="d-flex justify-content-center  mt-4  d-md-none d-lg-none d-xl-none d-xxl-none">
                         <div>
-                            <p class="txt-digit txt-digit-sm mb-sm-4 text-center">1.9k+</p>
+                            <p class="txt-digit txt-digit-sm mb-sm-2 text-center">1.9k+</p>
                             <p class="txt-active txt-active-sm">Active Users</p>
                         </div>
                         <div class="ms-5">
-                            <p class="txt-digit txt-digit-sm mb-sm-4 text-center">20+</p>
+                            <p class="txt-digit txt-digit-sm mb-sm-2 text-center">20+</p>
                             <p class="txt-active txt-active-sm">New Features</p>
                         </div>
                     </div>
@@ -105,9 +137,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 py-sm-4">
-                    <div class="line-1-sm line-1-md line-1-lg line-1-xl  line-1"></div>
+                    <div
+                        class="d-none d-sm-block d-md-block d-lg-block d-xl-block line-1-sm line-1-md line-1-lg line-1-xl line-1-xxl  line-1">
+                    </div>
                     <p class="text-center txt-recommended txt-recommended-sm txt-recommended-lg">Recommended By</p>
-                    <div class="line-2-sm line-2-md line-2-lg  line-2"></div>
+                    <div
+                        class="d-none d-sm-block d-md-block d-lg-block d-xl-block line-2-sm line-2-md line-2-lg line-2-xxl  line-2">
+                    </div>
                     <div class="row align-items-center">
                         <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
                             <img class="p-2-img mt-4" src="./assets/images/svg/coinbase.svg" alt="">
@@ -132,17 +168,19 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <div class="py-5 d-flex flex-column justify-content-center align-items-center">
-                        <h1 class="grid-heading">Why Choose Us</h1>
-                        <p class="text-center grid-headp">A Lorem Ipsum is simply dummy text of the printing and
+                    <div class="py-1 py-sm-5 d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="grid-heading grid-heading-sm grid-heading-xxl">Why Choose Us</h1>
+                        <p class="text-center grid-headp grid-headp-sm">A Lorem Ipsum is simply dummy text of the
+                            printing
+                            and
                             typesetting industry. Lorem Ipsum has been
                             the industry's standard dummy text ever since the 1500s.</p>
                     </div>
-                    <div class="grid-box d-grid">
-                        <div class="grid-1">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
                             <div class="card-main d-flex flex-column justify-content-center align-items-center">
                                 <img width="20%" class="pb-2" src="./assets/images/png/bank-icon.png" alt="icon">
-                                <h3 class="grid-text">Digital Saving</h3>
+                                <h3 class="grid-text grid-text-sm">Digital Saving</h3>
                                 <p class="text-center grid-para">A Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry</p>
                             </div>
@@ -150,7 +188,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card-main d-flex flex-column justify-content-center align-items-center">
                                 <img width="20%" class="pb-2" src="./assets/images/png/dollar-icon.png" alt="icon">
-                                <h3 class="grid-text">Online Investment</h3>
+                                <h3 class="grid-text grid-text-sm">Online Investment</h3>
                                 <p class="text-center grid-para">A Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry</p>
                             </div>
@@ -158,7 +196,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card-main d-flex flex-column justify-content-center align-items-center">
                                 <img width="20%" class="pb-2" src="./assets/images/png/secure-icon.png" alt="icon">
-                                <h3 class="grid-text">Secure and Fast</h3>
+                                <h3 class="grid-text grid-text-sm">Secure and Fast</h3>
                                 <p class="text-center grid-para">A Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry</p>
                             </div>
@@ -166,7 +204,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card-main d-flex flex-column justify-content-center align-items-center">
                                 <img width="20%" class="pb-2" src="./assets/images/png/card-icon.png" alt="icon">
-                                <h3 class="grid-text">Purchase via Cards</h3>
+                                <h3 class="grid-text grid-text-sm">Purchase via Cards</h3>
                                 <p class="text-center grid-para">A Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry</p>
                             </div>
@@ -174,8 +212,8 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card-main d-flex flex-column justify-content-center align-items-center">
                                 <img width="20%" class="pb-2" src="./assets/images/png/fingerp-icon.png" alt="icon">
-                                <h3 class="grid-text">Instant and fee-free
-                                    </h3>
+                                <h3 class="grid-text grid-text-sm">Instant and fee-free
+                                </h3>
                                 <p class="text-center grid-para">A Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry</p>
                             </div>
@@ -183,7 +221,7 @@
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="card-main d-flex flex-column justify-content-center align-items-center">
                                 <img width="20%" class="pb-2" src="./assets/images/png/fast-icon.png" alt="icon">
-                                <h3 class="grid-text">Secure and Fast</h3>
+                                <h3 class="grid-text grid-text-sm ">Secure and Fast</h3>
                                 <p class="text-center grid-para">A Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry</p>
                             </div>
@@ -194,18 +232,222 @@
         </div>
     </section>
     <!-- Section-3 End -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
-    </script>
+    <!-- page7 -->
+    <div class="page7 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <img src="./assets/images/page7-img1.png" alt="" class=" page7-img1">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h1 class="page7-head ff-gilroy-bold fs-48 clr-black fw-700">Choose and Convert your Wallet Anytime!
+                    </h1>
+                    <p class="page7-para ff-gilroy-light mt-4 fs-18 fw-500 clr-gray"> A Lorem Ipsum is simply dummy text
+                        of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown.</p>
+                    <p class="page7-para ff-gilroy-light fs-18 fw-500 clr-gray"> A Lorem Ipsum is simply dummy text of
+                        the printing and typesetting industry.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start mb-3"> <button type="button"
+                            class="page7_bttn col-sm-6 ff-gilroy-bold text-center">Choose your wallet</button></div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/page7-bg-img.png" alt="" class="page7-bg-img">
+    </div>
+    <!-- page8 -->
+    <div class="page8 position-relative overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-last order-lg-first">
+                    <h1 class="ff-gilroy-bold page8-head fs-48 clr-black fw-700">Available and Download Anytime!</h1>
+                    <p class="ff-gilroy-light page8-para fs-18 fw-500 clr-gray">
+                        A Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard.
+                    </p>
+                    <div class="d-sm-flex justify-content-center justify-content-lg-start main-link-box">
+                        <div class="link-box d-flex ml-24">
+                            <span>
+                                <svg width="29" height="30" viewBox="0 0 29 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.2771 19.6496C24.79 17.7208 27.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV2771 10.397L16.6622 15.0576L21.2771 19.6496Z"
+                                        fill="#FFD900" />
+                                    <path
+                                        d="M16.6624 15.0574L1.96797 29.8671C2.31286 29.9128 2.70229 29.8214 3.16138 29.569C4.12525 29.0414 14.3429 23.4615 21.2773 19.6506L16.6624 15.0574Z"
+                                        fill="#F43249" />
+                                    <path
+                                        d="M16.6624 15.0575L21.2773 10.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV6624 15.0575Z"
+                                        fill="#00EE76" />
+                                    <path
+                                        d="M16.6622 15.0579L1.94496 0.31665C1.34768 0.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV1104 1.23348 29.8219 1.9678 29.8904L16.6622 15.0579Z"
+                                        fill="#00D3FF" />
+                                </svg>
+                            </span>
+                            <div class="ml-5">
+                                <p class="link-head">GET IN ON</p>
+                                <h1 class="link-para">Google Play</h1>
+                            </div>
+                        </div>
+                        <div class="link-box d-flex ">
+                            <span>
+                                <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M27.1062 20.8165C26.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV5877 26.719 16.2402 26.7325C13.8942 26.7445 13.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV60668 10.963C6.97168 8.86149 9.12718 7.63149 11.1522 7.63149C13.2147 7.63149 14.5122 8.76249 16.2162 8.76249C17.8707 8.76249 18.8787 7.62849 21.2637 7.62849C23.0637 7.62849 24.9747 8.61099 26.3352 10.306C21.8772 12.7495 22.6002 19.1155 27.1062 20.8165ZM19.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV62049C15.8262 4.68549 15.1017 6.26499 15.3822 7.80099C16.9272 7.84749 18.5262 6.92499 19.4547 5.73549Z"
+                                        fill="url(#paint0_linear_1_580)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_1_580" x1="4.41377" y1="1.44849" x2="27.106"
+                                            y2="31.1729" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#E5E5E5" />
+                                            <stop offset="1" stop-color="white" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <div class="ml-5">
+                                <p class="link-head">Download on the</p>
+                                <h1 class="link-para">App Store</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 ">
+                    <img src="./assets/images/page8-img1.png" alt="" class=" page8-img">
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/page8-bg-img.png" alt="" class="page8_bg_img">
+    </div>
+    <!-- page9 -->
+    <div class="page9 overflow-hidden">
+        <div class="container d-flex justify-content-center align-items-center text-center">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <h1 class="page9-head ff-gilroy-bold fs-48 fw-700 clr-white">Ready to get updated?</h1>
+                    <p class="page9-para ff-gilroy-light fs-18 fw-500 clr-white">
+                        A Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard.
+                    </p>
+                    <div class="d-lg-flex mt-5 mb-5 input-box">
+                        <input type="email" placeholder="Email Address" class="input ff-gilroy-light fs-18" />
+                        <button class="inpt-bttn ff-gilroy-bold">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="fttr-pdding">
+                <div class="row mt-84">
+                    <div class="col-12 col-lg-6 order-last order-lg-first">
+                        <a href="" class="site-logo fttr-logo">B<span>.</span>Th</a>
+                        <p class="ff fs-20 fw-500 fttr_para ff-gilroy-light">
+                            A Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard.
+                        </p>
+                        <div class="d-flex gap-4 spans">
+                            <span class="footr_span1">
+                                <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_802_2)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M-0.0527344 24.0014C-0.0527344 10.7375 10.7351 -0.0512695 23.9928 -0.0512695C37.2505 -0.0512695 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV2653 -0.0527344 24.0014ZM1.5518 24.0014C1.5518 36.3802 11.6184 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9928 1.55084C11.6184 1.55084 1.5518 11.6225 1.5518 24.0014ZM25.2406 10.5003H29.2414C29.343 10.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV8509 29.9611 10.9481C29.9938 11.0453 30.0036 11.1487 29.9897 11.2504V15.7507C30.0422 15.9697 29.9522 16.1767 29.7963 16.3282C29.6847 16.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV2981 16.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9619 19.9486C29.9948 20.0458 30.0048 20.1493 29.9912 20.251V24.7513C30.0048 24.853 29.9948 24.9564 29.9619 25.0536C29.929 25.1508 29.8742 25.2391 29.8016 25.3117C29.7291 25.3842 29.6408 25.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV2721 37.5532 24.8297 37.5022H20.2485C20.1468 37.5153 20.0433 37.5049 19.9462 37.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9574 19.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV7572 25.3842 16.6847 25.3117C16.6122 25.2391 16.5573 25.1508 16.5245 25.0536C16.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV8514 16.6122 19.7631 16.6847 19.6906C16.7572 19.618 16.8455 19.5632 16.9427 19.5303C17.0398 19.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9166V12.0514H25.2391C21.6716 12.0514 20.9923 13.6535 20.9923 17.0168V20.2495C20.9923 20.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV0522 20.2485 21.052H17.9947V23.9502H20.2485C20.6924 23.9502 20.9938 24.3088 20.9938 24.7513V36.0021H24.0289L24.0304 24.7498C24.0308 24.5372 24.1155 24.3334 24.266 24.1833C24.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9894C24.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV0287 20.3533 24.0289 20.248L24.0349 17.4038C24.0349 16.1092 24.2299 14.8446 26.5587 14.8446L28.4377 14.9166Z"
+                                            fill="#5C5C5C" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_802_2">
+                                            <rect width="47.9861" height="48.0033" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class=" footr_span2">
+                                <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_548)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M-0.0527344 24.0014C-0.0527344 10.7375 10.7351 -0.0512695 23.9928 -0.0512695C37.2505 -0.0512695 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV2653 -0.0527344 24.0014ZM1.5518 24.0014C1.5518 36.3802 11.6184 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9928 1.55084C11.6184 1.55084 1.5518 11.6225 1.5518 24.0014ZM37.5897 15.6053C37.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9995 16.6673 38.109 16.8004C38.2185 16.9335 38.2823 17.0984 38.2908 17.2706C38.2994 17.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV7726 30.3078 35.3032 21.0405 35.3032C18.2127 35.3042 15.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV7419 32.0194C12.805 31.8499 12.9226 31.706 13.0761 31.6105C13.2297 31.5149 13.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV6683 29.2113C16.1026 28.5985 15.6776 27.8694 15.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV298L15.6375 26.2455C14.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9342 21.2735 14.0555 21.1962C14.1544 21.1379 14.2632 21.0983 14.3764 21.0792C13.9148 20.2178 13.6816 19.2525 13.6989 18.2753C13.7162 17.2982 13.9835 16.3417 14.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV1023C15.2338 15.092 15.3633 15.113 15.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV1596C24.3581 19.3888 24.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV8647 14.6594C28.574 14.3567 29.3371 14.2003 30.1083 14.1997C31.5278 14.2015 32.8964 14.7289 33.9502 15.6803C34.8183 15.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV634 37.3252 14.7353C37.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV5059C34.3672 19.3851 34.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV3901 18.8591 34.2361 18.7613C34.0822 18.6635 33.9661 18.5162 33.9071 18.3436C33.8481 18.171 33.8496 17.9834 33.9114 17.8118C33.9732 17.6402 34.0916 17.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV3454C33.7192 17.3718 33.5811 17.3638 33.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV8795 15.7154 28.9614 15.868 28.1619 16.296C27.3625 16.7241 26.7264 17.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV5622C25.7656 21.7557 25.5347 21.8502 25.2707 21.8487C21.5436 21.6562 18.0264 20.0641 15.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV.846 23.2033 15.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9605C18.7454 25.9951 18.9062 26.089 19.0237 26.2267C19.1412 26.3645 19.2087 26.5381 19.2149 26.7191C19.2212 26.9001 19.1659 27.0779 19.0582 27.2235C18.9504 27.369 18.7966 27.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9704C19.5178 29.2732 20.1525 29.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9971C21.5954 30.1539 21.5982 30.3231 21.551 30.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV20.0921 34.2306 19.8941C34.224 19.7602 34.2509 19.6267 34.3091 19.5059Z"
+                                            fill="#5C5C5C" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_548">
+                                            <rect width="47.9861" height="48.0033" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                            <span class="footr_span3">
+                                <svg width="49" height="49" viewBox="0 0 49 49" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M0 24.0526C0 10.7887 10.7879 0 24.0455 0C37.3032 0 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV0526ZM1.60453 24.0526C1.60453 36.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV60211 24.0455 1.60211C11.6711 1.60211 1.60453 11.6738 1.60453 24.0526ZM24.043 13.6332C27.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV5811 14.6802 32.9965 15.0957C33.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV.9471 31.5475C33.7356 32.0957 33.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV1766 34.3974C27.8373 34.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV2399 16.5506 33.96C16.0025 33.7485 15.5048 33.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV1878C13.6402 27.8481 13.6275 27.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV5573C14.3503 16.0091 14.6741 15.5112 15.0895 15.0957C15.5048 14.6802 16.0025 14.3562 16.5506 14.1448C17.306 13.8649 18.1039 13.7169 18.9094 13.7074C20.2486 13.6459 20.6509 13.6332 24.043 13.6332ZM24.043 11.3435C20.5927 11.3435 20.1597 11.3583 18.8045 11.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV1169 12.332 14.8837 12.0056 15.7281C11.6358 16.7156 11.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV6281C14.111 35.2682 14.8775 35.7676 15.7216 36.0941C16.7088 36.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV7465 29.2814 36.685C30.3354 36.6639 31.3782 36.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV3767C36.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV7325 20.1677 36.6711 18.8121C36.6498 17.7581 36.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV3643 12.0107C31.377 11.6411 30.3343 11.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV7932 30.826 18.7932C29.9838 18.7932 29.301 18.1105 29.301 17.2682C29.301 16.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9088 22.7547 17.5261 24.0449 17.5261C25.7751 17.5261 27.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV24.0589 17.5241 22.7469 18.0178 21.5545C18.5116 20.3621 19.3477 19.3429 20.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV8414 27.0394 27.047C27.8335 26.2526 28.2797 25.1752 28.2797 24.0517C28.2797 23.2139 28.0313 22.3949 27.566 21.6983C27.1007 21.0017 26.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV0505 21.0564C20.4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRyFTLRNyDmT1a1boZV9958 27.1083 21.6922 27.5738Z"
+                                        fill="#5C5C5C" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 ">
+                                <ul>
+                                    <li class="mb-3 fottr-head-link ff-gilroy-bold fs-24 fw-700 clr-black">About Us</li>
+                                    <li class="mb-3">
+                                        <a href=""
+                                            class="footer-tags ff-gilroy-light fs-20 fw-400 clr-gray">Whitepaper</a>
+                                    </li>
+                                    <li class="mb-3"><a href=""
+                                            class="footer-tags ff-gilroy-light fs-20 fw-400 clr-gray"> Blog</a></li>
+                                    <li class="mb-3">
+                                        <a href=""
+                                            class="footer-tags ff-gilroy-light fs-20 fw-400 clr-gray">Activity</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-sm-6 ">
+                                <ul>
+                                    <li class="mb-3 fottr-head-link ff-gilroy-bold fs-24 fw-700 clr-black">Support</li>
+                                    <li class="mb-3">
+                                        <a href="" class="footer-tags ff-gilroy-light fs-20 fw-400 clr-gray">Help &
+                                            Support</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="footer-tags ff-gilroy-light fs-20 fw-400 clr-gray">
+                                            Community</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="footer-tags ff-gilroy-light fs-20 fw-400 clr-gray"> Author
+                                            Profile</a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="" class="footer-tags ff-gilroy-light fs-20 fw-400 clr-gray">
+                                            Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Nav -->
     <script>
-        function openNav(){
-            document.getElementById("Nav-Bar").classList.toggle("start-0")
+        function openNav() {
+            document.getElementById("Nav-Bar").classList.toggle("show-nav")
             document.body.classList.toggle("overflow_hidden")
+
         }
     </script>
     <!-- Nav -->
-
+    <script>
+        setTimeout(() => {
+            document.getElementById("preloder").classList.add("d-none");
+            document.body.classList.remove("overflow-hidden");
+        }, 3000);
+    </script>
 </body>
 
 </html>
